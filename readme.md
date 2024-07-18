@@ -57,11 +57,12 @@ Run the django project
 
 
 # Add new staff members to the roster
+
 ```http
     POST /api/v1/employee/manager/roster/staff/create
 ```
-```http
-    Payload 
+Payload
+```http 
         {
             "employee_id":"employee_id"
         }
@@ -72,8 +73,9 @@ Run the django project
 ```http
     POST /api/v1/employee/manager/shift/create
 ```
+Payload
 ```http
-    Payload 
+     
         {
             "employee_id":"employee_id",
             "shift_data":{
@@ -95,8 +97,8 @@ Run the django project
 ```http
     POST /api/v1/employee/manager/shift/update
 ```
-```http
-    Payload 
+Payload
+```http 
         {
             "employee_id":"employee_id",
             "shift_data":{
@@ -136,8 +138,8 @@ Run the django project
 ```http
     GET /api/v1/employee/manager/roster/staff/attenance/get
 ```
+Query Parameter 
 ```http
-    Query Parameter 
         employee_id=employee_id
         current_day=true
         current_week=false
@@ -148,43 +150,48 @@ Run the django project
 ## Staff task Api
 
 # View their Assigned Shift
+
 ```http
     GET /api/v1/employee/staff/shift/get
 ```
+Query Parameter 
 ```http
-    Query Parameter 
+    
         current_shift_weekly= true 
         next_shift_weekly = false
 ```
 
 
-# Mark their attendance by capturing an image using the webcam,but only within 1 hour of their shift timing. 
+# Mark their attendance by capturing an image using the webcam,but only within 1 hour of their shift timing.
+
 ```http
     POST /api/v1/employee/staff/attendance/mark_out
 ```
+two type of payload
 ```http
-    two type of payload
-        1.
 
-            formdata
-
-        2.
-            {
-                "file":"base64string"
-            }
+    formdata
+```
+```http      
+    {
+        "file":"base64string"
+    }
 ```
 
-# View the Attendance 
+# View the Attendance
+
 ```http
     GET /api/v1/employee/staff/attendance/get
 ```
 
 # Interchange the Shift
+
 ```http
   POST /api/v1/employee/staff/shift/interchange
 ```
+Payload
 ```http
-    Payload 
+     
         {
             "employee_id":"employee_id"
         }

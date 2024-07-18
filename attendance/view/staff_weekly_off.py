@@ -2,7 +2,7 @@ from .imports import *
 
 class StaffWeeklyOff(APIView):
     authentication_classes = (JWTAuthentication,)
-    permission_classes = (IsStaffPermission,)
+    permission_classes = (IsManagerPermission,)
 
     def post(self,request,*args,**kwargs):
         try:
