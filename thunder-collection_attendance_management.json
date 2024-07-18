@@ -1,0 +1,304 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "attendance_management",
+    "collectionId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+    "dateExported": "2024-07-18T15:52:31.619Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "694ecf48-4b1d-4498-bdbf-4e0e79a83963",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "attendance mark out",
+            "url": "http://127.0.0.1:8000/api/v1/employee/staff/attendance/mark_out",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-17T19:21:32.324Z",
+            "modified": "2024-07-18T04:22:56.833Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\rohbo\\Downloads\\IMG20221005151653.jpg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjgwMTU3LCJpYXQiOjE3MjEyNzY1NTcsImp0aSI6IjNmYmNlMGU0ZTUzZjQ5NTk5MzM3ZjBhYWE1NTRiNTVlIiwidXNlcl9pZCI6ImVtcGxveWVlX2Q4ZDY5NmY0YTY0ZDRjMWM4ZDBmMjMxNWJmYWE3YmJmIn0.IDa-2GN1zuYLceWXhj961U-TtU-AHI_fsusUD9ioWng"
+            }
+        },
+        {
+            "_id": "f90d9b8c-6054-4132-acc8-dde0317349f3",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "manager login",
+            "url": "http://127.0.0.1:8000/api/v1/employee/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-17T19:23:04.112Z",
+            "modified": "2024-07-18T05:10:38.018Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rohit1@gmail.com\",\n  \"password\":\"Rohit@43\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "baa4a120-cc22-421c-80bd-51a0e3e43743",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "staff login",
+            "url": "http://127.0.0.1:8000/api/v1/employee/login",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2024-07-18T04:58:20.810Z",
+            "modified": "2024-07-18T04:58:20.810Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rohit@gmail.com\",\n  \"password\":\"Rohit@43\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f4693bdd-b56a-46d8-8289-b6dd5cd8ec20",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "get attendance",
+            "url": "http://127.0.0.1:8000/api/v1/employee/staff/attendance/get",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-18T04:31:50.257Z",
+            "modified": "2024-07-18T04:33:24.449Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjgwMTU3LCJpYXQiOjE3MjEyNzY1NTcsImp0aSI6IjNmYmNlMGU0ZTUzZjQ5NTk5MzM3ZjBhYWE1NTRiNTVlIiwidXNlcl9pZCI6ImVtcGxveWVlX2Q4ZDY5NmY0YTY0ZDRjMWM4ZDBmMjMxNWJmYWE3YmJmIn0.IDa-2GN1zuYLceWXhj961U-TtU-AHI_fsusUD9ioWng"
+            }
+        },
+        {
+            "_id": "cd942bee-f2e9-453b-881a-4df19dae0a68",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "staff shift get",
+            "url": "http://127.0.0.1:8000/api/v1/employee/staff/shift/get",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-07-18T04:44:56.514Z",
+            "modified": "2024-07-18T15:28:37.439Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "current_shift_weekly",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "next_shift_weekly",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzIwMTA1LCJpYXQiOjE3MjEzMTY1MDUsImp0aSI6IjEyZDBhMTU1ZWU3MDRiNzJhNWVkOWFiYzZjODk2ZjA0IiwidXNlcl9pZCI6ImVtcGxveWVlX2Q4ZDY5NmY0YTY0ZDRjMWM4ZDBmMjMxNWJmYWE3YmJmIn0.Jn0NyQ5hxfRUb2Un05Q0GLoSPOA_dzNAVBM1pR0ZtUU"
+            }
+        },
+        {
+            "_id": "8778dc0e-fb14-40d9-ab8a-7851d96f8519",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "add new member of staff in roster",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/roster/staff/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-07-18T04:59:50.142Z",
+            "modified": "2024-07-18T05:10:56.086Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjgzMDM3LCJpYXQiOjE3MjEyNzk0MzcsImp0aSI6Ijg0Zjk0N2VhMTQ2OTQ4ZDdhMzJlNzMxMTk5MWZjZGExIiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.-f-TsHHNMn2OD6WLWuphWUO-xQzJAsJYtOdZm7eCjuo"
+            }
+        },
+        {
+            "_id": "5561520f-1ac8-43ad-86c4-87cce870d96f",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "get all staff",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/staff/getAll",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-07-18T05:11:34.995Z",
+            "modified": "2024-07-18T05:12:23.263Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjgzMDM3LCJpYXQiOjE3MjEyNzk0MzcsImp0aSI6Ijg0Zjk0N2VhMTQ2OTQ4ZDdhMzJlNzMxMTk5MWZjZGExIiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.-f-TsHHNMn2OD6WLWuphWUO-xQzJAsJYtOdZm7eCjuo"
+            }
+        },
+        {
+            "_id": "47cbccf3-16d9-4bb3-b81e-2d82f3854023",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "get member of staff in roster",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/roster/staff/employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-07-18T05:31:24.696Z",
+            "modified": "2024-07-18T06:12:43.308Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjg2NzUxLCJpYXQiOjE3MjEyODMxNTEsImp0aSI6IjBmMDcyZmRlODRiMTRmNGQ5M2IxMGY0ZmFhNjRlODE5IiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.aqc4M--Lpv2ix-6p0SOHlqKp-5k_6yBXMYqIkOB2SO0"
+            }
+        },
+        {
+            "_id": "45c57e54-4268-43b9-a4ef-51b062dd1952",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "get all roster ",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/roster/staffs/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-07-18T06:40:30.210Z",
+            "modified": "2024-07-18T06:45:38.969Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMjg2NzUxLCJpYXQiOjE3MjEyODMxNTEsImp0aSI6IjBmMDcyZmRlODRiMTRmNGQ5M2IxMGY0ZmFhNjRlODE5IiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.aqc4M--Lpv2ix-6p0SOHlqKp-5k_6yBXMYqIkOB2SO0"
+            }
+        },
+        {
+            "_id": "9df2553c-8924-4cf0-854c-0b4cd6edf4bf",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "get attendance",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/roster/staff/attenance/get?employee_id=employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf&current_day=true",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-07-18T11:08:53.326Z",
+            "modified": "2024-07-18T11:28:27.815Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "employee_id",
+                    "value": "employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf",
+                    "isPath": false
+                },
+                {
+                    "name": "current_day",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzA0Nzk0LCJpYXQiOjE3MjEzMDExOTQsImp0aSI6IjUyMzAwYzBmYzcxNTRiNDRiYmY0NDgyMjM4ZTM4ODQyIiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.hXeOBq8-pPbUykKZn2vdvyLN4gIAHE0vuu7Fxdr3q_g"
+            }
+        },
+        {
+            "_id": "3dffca96-e9f1-4029-a940-7f6fb2c13633",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "shift interchange",
+            "url": "http://127.0.0.1:8000/api/v1/employee/staff/shift/interchange",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-07-18T12:06:12.639Z",
+            "modified": "2024-07-18T12:10:49.888Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzA4MTIyLCJpYXQiOjE3MjEzMDQ1MjIsImp0aSI6ImRjMjYzYmFlNDY4ODQ4NmVhODQ1NjA0YjJkY2Y1MDMxIiwidXNlcl9pZCI6ImVtcGxveWVlX2Q4ZDY5NmY0YTY0ZDRjMWM4ZDBmMjMxNWJmYWE3YmJmIn0.fU2qaOXx4BYNeIutsWQEP0lzQHbhmplB7FUUq_MGszA"
+            }
+        },
+        {
+            "_id": "8ae94d0b-8eb3-4962-8749-d4d440d92be2",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "create shift",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/shift/create",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-07-18T12:38:12.357Z",
+            "modified": "2024-07-18T13:09:35.413Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\",\n  \"shift_data\":{\n    \"Monday\":\"9-6\",\n    \"Tuesday\":\"9-6\",\n    \"Wednesday\":\"9-6\",\n    \"Thursday\":\"9-6\",\n    \"Friday\":\"10-7\"\n  },\n  \"current_week\":true,\n  \"next_week\":true\n  \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzEwMjYxLCJpYXQiOjE3MjEzMDY2NjEsImp0aSI6IjAwOWVjNjQ5MjMwMDQzMGZhZTRiYzVjODVlZDU5YmM0IiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.Jb5ScFPv8ndFZDT1IQV-8u9X1qo5qcU-EutHcvVFVJk"
+            }
+        },
+        {
+            "_id": "f9b3d2ce-80df-48b7-981b-74b86261cee0",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "update shift ",
+            "url": "http://127.0.0.1:8000/api/v1/employee/manager/shift/update",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-07-18T12:53:48.655Z",
+            "modified": "2024-07-18T13:38:51.008Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_id\":\"employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf\",\n  \"shift_data\":{\n    \"Monday\":\"9-6\",\n    \"Tuesday\":\"9-6\",\n    \"Wednesday\":\"9-6\",\n    \"Thursday\":\"9-6\",\n    \"Friday\":\"10-7\"\n  },\n  \"current_week\":true,\n  \"next_week\":true\n  \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzEwMjYxLCJpYXQiOjE3MjEzMDY2NjEsImp0aSI6IjAwOWVjNjQ5MjMwMDQzMGZhZTRiYzVjODVlZDU5YmM0IiwidXNlcl9pZCI6ImVtcGxveWVlXzlmMDIxOWM1YWY3NDQ0MTM5NjQxZmFkMTQyMDYxYzE2In0.Jb5ScFPv8ndFZDT1IQV-8u9X1qo5qcU-EutHcvVFVJk"
+            }
+        },
+        {
+            "_id": "2746f0ac-0861-4c73-929d-fd9a3483704a",
+            "colId": "7ab34aff-cb4e-49a1-b273-1500e37f0b71",
+            "containerId": "",
+            "name": "staff weekly off",
+            "url": "http://127.0.0.1:8000/api/v1/employee/staff/employee_d8d696f4a64d4c1c8d0f2315bfaa7bbf/rest_day/thursday/create",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-07-18T14:29:50.397Z",
+            "modified": "2024-07-18T14:58:44.463Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzE2OTI1LCJpYXQiOjE3MjEzMTMzMjUsImp0aSI6ImU4Mjk2MTA4MzE0NDRiYzRhYmFlOTliNmE4MzIwNGM4IiwidXNlcl9pZCI6ImVtcGxveWVlX2Q4ZDY5NmY0YTY0ZDRjMWM4ZDBmMjMxNWJmYWE3YmJmIn0.ErCbhsDgfdj2Lcl2qpN8K1nUbrx0GdK1xOQQTw-z940"
+            }
+        }
+    ],
+    "ref": "qzkXYYZaKCsdZKX_dMxXa60WvOmx8fngi6-9BZMjY5aCxeftKIIU3uLZqym064BkMCdfL490JvZ9kVDhZjQ8UA"
+}
