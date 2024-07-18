@@ -29,9 +29,9 @@ Run the django project
 ```
 
 
-## Login Manager and Staff
+# Login Manager and Staff
 
-# token generate api
+## token generate api
 ```http
   POST /api/v1/employee/login
 ```
@@ -45,10 +45,10 @@ Run the django project
 ```
 
 
-## Manage task Api
+# Manage task Api
 
 
-# Get All staff members
+## Get All staff members
 ```http
     GET /api/v1/employee/manager/staff/getAll
 ```
@@ -56,7 +56,7 @@ Run the django project
 
 
 
-# Add new staff members to the roster
+## Add new staff members to the roster
 
 ```http
     POST /api/v1/employee/manager/roster/staff/create
@@ -68,7 +68,7 @@ Payload
         }
 ```
 
-# Set working day and shifts for each staff member
+## Set working day and shifts for each staff member
 
 ```http
     POST /api/v1/employee/manager/shift/create
@@ -92,7 +92,7 @@ Payload
 ```
 
 
-# Update shift timing per staff member
+## Update shift timing per staff member
 
 ```http
     POST /api/v1/employee/manager/shift/update
@@ -115,25 +115,25 @@ Payload
 ```
 
 
-# View the single staff member in roster
+## View the single staff member in roster
 
 ```http
     GET /api/v1/manager/roster/staff/<employee_id>
 ```
 
-# View the All staff member in roster
+## View the All staff member in roster
 
 ```http
     GET /api/v1/manager/roster/staffs/get
 ```
 
-# Set 1-2 weekly off per staff member
+## Set 1-2 weekly off per staff member
 
 ```http
     POST /api/v1/employee/staff/<employee_id>/rest_day/<off_day>/create
 ```
 
-# View attendance per staff member or all member
+## View attendance per staff member or all member
 
 ```http
     GET /api/v1/employee/manager/roster/staff/attenance/get
@@ -147,9 +147,9 @@ Query Parameter
 
 
 
-## Staff task Api
+# Staff task Api
 
-# View their Assigned Shift
+## View their Assigned Shift
 
 ```http
     GET /api/v1/employee/staff/shift/get
@@ -162,7 +162,7 @@ Query Parameter
 ```
 
 
-# Mark their attendance by capturing an image using the webcam,but only within 1 hour of their shift timing.
+## Mark their attendance by capturing an image using the webcam,but only within 1 hour of their shift timing.
 
 ```http
     POST /api/v1/employee/staff/attendance/mark_out
@@ -178,13 +178,13 @@ two type of payload
     }
 ```
 
-# View the Attendance
+## View the Attendance
 
 ```http
     GET /api/v1/employee/staff/attendance/get
 ```
 
-# Interchange the Shift
+## Interchange the Shift
 
 ```http
   POST /api/v1/employee/staff/shift/interchange
