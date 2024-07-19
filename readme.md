@@ -1,15 +1,15 @@
 
 # Attendance Management System with Image Capture
 
-Firstly create a python virual environment
+Firstly create a python virtual environment
 ```bash
   python -m venv venv
 ```
-Activate the virual Environment 1 (windows)
+Activate the virtual Environment 1 (windows)
 ```bash
   source venv/Scripts/activate
 ```
-Activate the virual Environment 2 (mac/linux)
+Activate the virtual Environment 2 (mac/linux)
 ```bash
   . venv/bin/activate
 ```
