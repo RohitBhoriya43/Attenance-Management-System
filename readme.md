@@ -28,6 +28,21 @@ Run the django project
   python manage.py createsuperuser
 ```
 
+## First you run the command to create superuser,after that you login to the admin portal and from the admin portal you will be able to create a Manager or Staff and then you can use the token generating API and after the token is generated, you can use this access token. Can be used by sending it to manager or staff task API. 
+
+## Default Manager and Staff token gerneration Data is below:
+
+Manager
+```bash
+  email = rohit1@gmail.com
+  password = Rohit@43
+```
+
+Staff
+```bash
+  email = rohit@gmail.com
+  password = Rohit@43
+```
 
 # Login Manager and Staff
 
